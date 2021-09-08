@@ -1,0 +1,33 @@
+{
+  "name": "cdenv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "format:check": "prettier --ignore-path ./.gitignore --check \"./**/*.{html,json,js,ts,css}\"",
+    "lint": "eslint --ignore-path ./.gitignore --fix \"./**/*.{js,ts}\"",
+    "lint:check": "eslint --ignore-path ./.gitignore --quiet \"./**/*.{js,ts}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mcnoble1/cdENV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mcnoble1/cdENV/issues"
+  },
+  "homepage": "https://github.com/Mcnoble1/cdENV#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "jest": "^27.1.1",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.3.2"
+  }
+}
