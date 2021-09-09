@@ -1,0 +1,40 @@
+/* general */
+/* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: #fff;
+  /* height: 100%; */
+}
+
+.hero {
+  background-color: #283a8f;
+  grid-row: 1/2;
+  height: 500px;
+  display: grid;
+  grid-template-columns: ;
+  grid-template-columns: ;
+}
+
+.description {
+  grid-row: 2/3;
+}
+
+.documentation {
+  background-color: #283a8f;
+  grid-row: 3/4;
+}
+
+footer {
+  display: flex;
+}
