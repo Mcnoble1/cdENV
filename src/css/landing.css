@@ -1,5 +1,5 @@
 /* general */
-/* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Ubuntu, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(3, 1fr);
@@ -17,24 +17,104 @@ body {
   /* height: 100%; */
 }
 
+/* Hero Section */
 .hero {
+  padding: 20px 50px 20px 50px;
   background-color: #283a8f;
+  color: #fff;
   grid-row: 1/2;
-  height: 500px;
   display: grid;
-  grid-template-columns: ;
-  grid-template-columns: ;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 1fr;
 }
 
+.navbar {
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar button {
+  padding: 10px;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  margin-right: 20px;
+}
+
+.navbar button:hover {
+  transform: scale(0.98);
+}
+
+.navbar button a {
+  color: #01e4f0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hero-content {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content h3 {
+  width: 591.49px;
+  height: 183px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 121.9%;
+}
+
+.hero-content h3 span {
+  color: #01e4f0;
+}
+
+.hero-content p {
+  width: 485.89px;
+  height: 52px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.hero-content button {
+  padding: 20px 30px;
+  color: #283a8f;
+  margin-top: 30px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    #01e4f0;
+  border-radius: 5px;
+  border: 1px solid #01e4f0;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.hero-content button:hover {
+  transform: scale(0.98);
+}
+
+.hero-content button a {
+  text-decoration: none;
+}
+
+/* Description section */
 .description {
+  padding: 50px;
   grid-row: 2/3;
 }
 
+/* Documentation Section */
 .documentation {
+  padding: 50px;
   background-color: #283a8f;
   grid-row: 3/4;
 }
 
 footer {
+  padding: 50px;
   display: flex;
 }
